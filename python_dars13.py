@@ -121,3 +121,106 @@
 #     for til in info['tillar']:
 #         print(til.upper())
 
+# Amalyot
+
+# shaxs0 = {
+#     'ism':'Erkin Vohidov',
+#     'tyil':1936,
+#     'tjoy':'Fargonada',
+#     'umr':80,
+#     'faoliyat':['shoir','o\'qituvchi ','jurnalist']
+# }
+
+# shaxs1 = {
+#     'ism':'cristiano ronaldo',
+#     'tyil':1985,
+#     'tjoy': 'Portugaliyada',
+#     'umr':'trik',
+#     'faoliyat':['5 ta oltin to\'p','5 karra UEFA chempioni','2016 Yevropa chempioni']
+# }
+
+# shaxs2 = {
+#     'ism':'Elon Musk',
+#     'tyil':1971,
+#     'tjoy':'Janubiy Afrikada',
+#     'umr':'trik',
+#     'faoliyat':['PayPal','SpaceX','Tesla','Neuralink']
+# }
+
+# shaxs3 = {
+#     'ism':'Albert Eynshteyn',
+#     'tyil':1879,
+#     'tjoy':'Germaniyada',
+#     'umr':76,
+#     'faoliyat':['Nisbiylik nazariyasi','Fotoelektrik effekt','Brown harakati']
+# }
+
+# shaxslar = [ shaxs0, shaxs1, shaxs2, shaxs3]
+
+# for n in shaxslar:
+#     if n['umr'] != 'trik':
+#         print(f"{n['ism'].title()} {n['tyil']}-yilda {n['tjoy'].title()} tavvalud topgan. {n['umr']} yil yashagan.")
+#     else:
+#         print(f"{n['ism'].title()} {n['tyil']}-yilda {n['tjoy'].title()} tavvalud topgan. Hozircha {n['umr']}")
+
+# for n in shaxslar:
+#     faoliyat = n['faoliyat']
+#     print(f"{n['ism'].title()} ning faoliyat:")
+#     for m in faoliyat:
+#         print(m.capitalize())
+
+# kino = {
+#     'Akam':['Uyda yolg\'iz','Uzuklar hukumdori','Garri Potter','Osmandagi bolalar'],
+#     'Men':['Interstellar','Boshqotirma','Snayper'],
+#     'Opam':['Novda','Samo farzandlari','Loyqalangan suv']
+# }
+
+# for k, v in kino.items():
+#     print(f"{k}ning sevimli kinolari:")
+#     for n in v:
+#         print(n)
+
+# countries = {
+#     'uzb':{
+#         'poytaxt':'toshkent',
+#         'hududi':448.900,
+#         'aholi':37,
+#         'pul':"so'm"
+#     },
+#     'poland':{
+#         'poytaxt':'varshava',
+#         'hududi':312.696,
+#         'aholi':38,
+#         'pul':'zloty'
+#     },
+#     'israel':{
+#         'poytaxt':'tel-aviv',
+#         'hududi': 22.072,
+#         'aholi': 9,
+#         'pul':'shekel'
+#     }
+# }
+
+# for country, value in countries.items():
+#     if country.lower() == 'uzb':
+#         country = country.upper()
+#     else:
+#         country = country.capitalize()
+#     print(f"\n{country}ning poytaxti {value['poytaxt'].title()}"
+#           f"\nHududi: {value['hududi']} kv.km"
+#           f"\nAholisi: {value['aholi']} mln"
+#           f"\nPul birligi: {value['pul']}"
+#     )
+
+# country = input("Davlat nomini yoki qisqartmasini kiriting: ").lower()
+
+# if country in countries:
+#     info = countries[country]
+#     print(f"\n{country.title()}ning poytaxti {info['poytaxt'].title()}"
+#           f"\nHududi: {info['hududi']} kv.km"
+#           f"\nAholisi: {info['aholi']} mln"
+#           f"\nPul birligi: {info['pul']}"
+#         )
+# else:
+#     print("Bizda bu davlat haqida ma'lumot yo'q")
+   
