@@ -49,6 +49,9 @@
 # sonlar = r.sample(range(100),10)
 # print(sonlar)
 
+# son = r.choice(range(10))
+# print(son)
+
 # def juftmi(x):
 #     return x%2==0
 
