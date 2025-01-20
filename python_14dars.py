@@ -178,40 +178,40 @@
 #     for k in kino:
 #         print(k.title())
 
-davlatlar = {
-    'o\'zbekiston':{
-        'poytaxt':'toshkent',
-        'hududi':448978,
-        'aholi':40000000,
-        'valyuta':'so\'m'
-    },
-    'rossiya':{
-        'poytaxt':'maskva',
-        'hududi':17098246,
-        'aholi':150000000,
-        'valyuta':'rubl'
-    },
-    'aqsh':{
-        'poytaxt':'vashington',
-        'hududi':9631418,
-        'aholi':350000000,
-        'valyuta':'dollar'
-    },
-    'malaziya':{
-        'poytaxt':'kuaval-lumpur',
-        'hududi':329750,
-        'aholi':25000000,
-        'valyuta':'rinngit'
-    }
-}
+# davlatlar = {
+#     'o\'zbekiston':{
+#         'poytaxt':'toshkent',
+#         'hududi':448978,
+#         'aholi':40000000,
+#         'valyuta':'so\'m'
+#     },
+#     'rossiya':{
+#         'poytaxt':'maskva',
+#         'hududi':17098246,
+#         'aholi':150000000,
+#         'valyuta':'rubl'
+#     },
+#     'aqsh':{
+#         'poytaxt':'vashington',
+#         'hududi':9631418,
+#         'aholi':350000000,
+#         'valyuta':'dollar'
+#     },
+#     'malaziya':{
+#         'poytaxt':'kuaval-lumpur',
+#         'hududi':329750,
+#         'aholi':25000000,
+#         'valyuta':'rinngit'
+#     }
+# }
 
-davlat = input("Davlat nomini kiriting: ").lower()
+# davlat = input("Davlat nomini kiriting: ").lower()
 
-if davlat in davlatlar:
-    info = davlatlar[davlat]
-    print(f"\n{davlat.capitalize()}ning poytaxti {info['poytaxt'].title()}"
-          f"\nHududi: {info['hududi']} kv.km"
-          f"\nAholisi: {info['aholi']}"
-          f"\nPul birligi: {info['valyuta']}") 
-else:
-    print("Bizda bu davlat haqida ma'lumot yo'q" )
+# if davlat in davlatlar:
+#     info = davlatlar[davlat]
+#     print(f"\n{davlat.capitalize()}ning poytaxti {info['poytaxt'].title()}"
+#           f"\nHududi: {info['hududi']} kv.km"
+#           f"\nAholisi: {info['aholi']}"
+#           f"\nPul birligi: {info['valyuta']}") 
+# else:
+#     print("Bizda bu davlat haqida ma'lumot yo'q" )
