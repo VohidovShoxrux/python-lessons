@@ -92,3 +92,97 @@
 #     else:
 #         narh = "Noma'lum"
 #     print(f"{avto['rang'].title()} {avto['model'].title()}. Narhi: {narh.title()}")
+
+# amaliot
+
+# def user_data(ism,familiya,t_yil,t_joy,email,phone):
+#     data = {"ism":ism,
+#             "familiya":familiya,
+#             "age":2025-int(t_yil),
+#             "t_joy":t_joy,
+#             "email":email,
+#             "phone":phone}
+#     return data
+
+# print("Iltimos shaxsingiz haqida ma'lumotlarni to'ldiring!")
+# mijozlar = []
+# while True:
+#     print("\nQuyidagi ma'lumotlarni kiriting")
+#     ism=input("Ismingizni kiriting: ")
+#     familiya=input("Familiyangizni kiriting: ")
+#     yosh=input("Tug'ilgan yilingizni kiriting: ")
+#     t_joy=input("Tug'ilgan jongizni kiriting: ")
+#     email=input("Emailingiz nomini kirting: ")
+#     phone=input("Telefon raqamingizni kiriting: ")
+
+#     mijozlar.append(user_data(ism=ism,familiya=familiya,t_yil=yosh,t_joy=t_joy,email=email,phone=phone))
+
+#     javob = input("Yana user qo'shasizmi? (yes/no): ")
+#     if javob=='no':
+#         break
+
+# print("Mijozlar haqida ma'lumotlar: ")
+# for mijoz in mijozlar:
+#     if mijoz['phone']:
+#         phone = mijoz['phone']
+#     else:
+#         phone = "Noma'lum"
+#     print(f"{mijoz['ism'].title()} {mijoz['familiya'].title()}\n{mijoz['age']} yoshda {mijoz['t_joy'].capitalize()} da tug'ilgan.\nAmaldagi email:{mijoz['email']} va tel raqami {phone}"  )
+
+# def uch_son(a,b,c):
+#     if a>b:
+#         if a>c:
+#             son = a
+#         else:
+#             son = c
+#     else:
+#         if b>c:
+#             son = b
+#         else:
+#             son = c
+#     return c
+
+# print("Uchta sondan kattasini topuvchi dastur!")
+# while True:
+#     num1=int(input("Birinchi sonni kiriting: "))
+#     num2=int(input("Ikkinchi sonni kiriting: "))
+#     num3=int(input("Uchinchi sonni kiriting: "))
+#     son = uch_son(a=num1,b=num2,c=num3)
+#     print(f"Eng katta son {son}")
+
+#     javob = input("Yana davom etamizmi? (yes/no)")
+#     if javob == 'no':
+#         break
+
+
+# def tub_sonlar_top(min, max):
+#     tub_sonlar = []
+#     for n in range(min, max + 1):
+#         tub = True
+#         if n == 1:
+#             tub = False
+#         elif n == 2:
+#             tub = True
+#         else:
+#             for x in range(2, n):
+#                 if n % x == 0:
+#                     tub = False
+#         if tub:
+#             tub_sonlar.append(n)
+
+#     return tub_sonlar
+
+# a = tub_sonlar_top(1,10)
+# print(a)
+
+# def fibonacci(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x == 0 or x == 1:
+#             sonlar.append(1)
+#         else:
+#             sonlar.append(sonlar[x - 1] + sonlar[x - 2])
+#     return sonlar
+
+# print(fibonacci(10))
+
