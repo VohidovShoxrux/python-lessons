@@ -2,6 +2,6 @@
 # vohidov
 # so'z topish
 
-from python_25dars import play
+# from python_25dars import play
 
-play()
+# play()
