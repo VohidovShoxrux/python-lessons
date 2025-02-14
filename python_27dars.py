@@ -94,17 +94,17 @@
 
 # amaliyot
 
-class User:
-    def __init__(self,ism,foydalanuvchi,eamil,tel_nomer):
-        self.name = ism
-        self.username = foydalanuvchi
-        self.email = eamil
-        self.phone_number = tel_nomer
+# class User:
+#     def __init__(self,ism,foydalanuvchi,eamil,tel_nomer):
+#         self.name = ism
+#         self.username = foydalanuvchi
+#         self.email = eamil
+#         self.phone_number = tel_nomer
     
-    def info(self):
-        return f"Username: {self.username}\nName: {self.name}\nEmail: {self.email}\nNumber: {self.phone_number}"
+#     def info(self):
+#         return f"Username: {self.username}\nName: {self.name}\nEmail: {self.email}\nNumber: {self.phone_number}"
 
-user = User("Shoxrux","Karl","vohidovmillatumidvori01@gamil.com",932142805) 
+# user = User("Shoxrux","Karl","vohidovmillatumidvori01@gamil.com",932142805) 
 
-# print(user.username)
-print(user.info())
+# # print(user.username)
+# print(user.info())
