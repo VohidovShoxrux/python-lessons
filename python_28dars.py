@@ -90,3 +90,54 @@
 # # print(see_methods(talaba1))
 # # print(talaba1.__dict__)
 # print(talaba1.__dict__.keys())
+
+# amaliyot
+
+# class Avto:
+#     def __init__(self,model,rangi,karobka,narh):
+#         self.model = model
+#         self.rangi = rangi
+#         self.karobka = karobka
+#         self.narh = narh
+#         self.kilometr = 0
+
+#     def get_info(self):
+#         return f"{self.rangi.title()} {self.model.title()} karobka {self.karobka}, {self.kilometr}km yurgan"
+
+#     def update_km(self,km):
+#         self.kilometr = km
+
+# avto1 = Avto("gentra","qora","avtomat",15000)
+# # avto1.update_km()
+# # print(avto1.get_info())
+
+
+
+# class Avtosalon:
+#     def __init__(self,nom,manzil):
+#         self.nom = nom
+#         self.manzil = manzil
+#         self.avtolar = []
+
+#     def add_avto(self,avto):
+#         self.avtolar.append(avto)
+
+#     def get_avtolar(self):
+#         return [avto.get_info() for avto in self.avtolar]
+
+# avto1 = Avto("Tesla Model S", "Oq", "Avtomat", 80000)
+# avto2 = Avto("BMW X5", "Qora", "Avtomat", 75000,)
+
+# avto1.update_km(5000)
+
+# salon = Avtosalon("Super Cars", "Toshkent, Chilonzor")
+# salon.add_avto(avto1)
+# salon.add_avto(avto2)
+
+# print(avto1.get_info())
+# print(avto2.get_info())
+# print("\nAvtosalondagi avtomobillar:\n", salon.get_avtolar())
+
+# print(dir(Avto))
+
+# print(avto1.__dict__)
