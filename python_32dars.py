@@ -70,3 +70,50 @@
 
 # print(talaba1)
 # print(talaba2)
+
+# amaliyot
+
+# filename = 'data/example.txt'
+
+# with open(filename) as file:
+#     matn = file.read()
+# print(matn)
+
+# filename = 'pi_million_digits.txt'
+
+# with open(filename) as file:
+#     pi = file.read()
+
+# pi = pi.rstrip()
+# pi = pi.replace('\n','')
+# pi = pi.replace(' ','')
+
+# # print(pi)
+
+# bdate = '022025'
+
+# # print(bdate in pi)
+
+# pi = float(pi)
+
+# import pickle
+
+# filename2 = 'pickle_file'
+
+# with open(filename2,'wb') as file:
+#     pickle.dump(pi,file)
+
+# with open(filename2,'rb') as file:
+#     plain_txt = pickle.load(file)
+
+# print(plain_txt)
+
+# filename = 'data/user_datas.txt'
+
+# data = input("Assalomu alaykum, iltimos ismingizni kiriting: ")
+
+# with open(filename,'a') as file:
+#     file.write(data)
+
+# with open(filename) as file:
+#     print(file.read())
