@@ -122,15 +122,15 @@
 
 # amaliyot
 # 1-mashiq
-import json
+# import json
 
-data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2025, "Narh":40000}
+# data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2025, "Narh":40000}
 
-data_json = json.dumps(data)
+# data_json = json.dumps(data)
 
-# print(data_json)
+# # print(data_json)
 
-talaba_json = """{"ism":"Hasan","familiya":"Husanov","tyil":2000}"""
+# talaba_json = """{"ism":"Hasan","familiya":"Husanov","tyil":2000}"""
 
 # talaba = json.loads(talaba_json)
 # print(talaba['ism'], talaba['familiya'])
@@ -150,7 +150,17 @@ talaba_json = """{"ism":"Hasan","familiya":"Husanov","tyil":2000}"""
 #     fakultet = student['faculty']
 #     print(f"{ism} {familiya}, {kurs}-kurs, {fakultet} talabasi")
 
+# with open('result.json', 'r', encoding='utf-8') as f:
+#     data = json.load(f)  # JSON faylni o‘qish
 
+# # Maqola ma'lumotlarini ajratib olish
+# page = next(iter(data["query"]["pages"].values()))  # Sahifa ID'si noma'lum bo‘lgani uchun values() orqali olamiz
+# title = page["title"]
+# extract = page["extract"]
+
+# # Konsolga chiqarish
+# print(f"Sarlavha: {title}\n")
+# print(f"Qisqa matn: {extract}")
 
     
 
