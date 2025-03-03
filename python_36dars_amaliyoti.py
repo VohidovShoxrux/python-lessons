@@ -47,7 +47,7 @@ class Talaba(Shaxs):
 
     def get_info(self):
         info = f"{self.ism} {self.familiya}"
-        info += f" {self.get_bosqich()}-bosqich. ID raqam:{self.idraqam}"
+        info += f" {self.get_bosqich()}-bosqich. ID raqam: {self.idraqam}"
         return info
     
    
