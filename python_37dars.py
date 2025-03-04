@@ -150,3 +150,69 @@ from wordlist import words
 #         break
 #     else:
 #         print("Maxfiy so'z talabga javob bermadi")
+
+# amaliyot
+
+# import datetime as dt
+
+# # # Bugungi sanani olish
+# # bugun = dt.date.today()
+
+# # # 2 hafta (14 kun) farq bilan 10 ta sanani chiqarish
+# # for n in range(10):
+# #     # Har bir keyingi sana = bugun + (14 kun * n)
+# #     keyin = bugun + dt.timedelta(days=14 * n)
+# #     print(keyin)
+
+
+# # Bugungi sana
+# bugun = dt.date(2025, 3, 3)
+
+# # Ramazon hayiti sanasi
+# ramazon_hayiti = dt.date(2025, 3, 31)
+
+# # Qurbon hayiti sanasi
+# qurbon_hayiti = dt.date(2025, 6, 7)
+
+# # Farqlarni hisoblash
+# ramazon_farq = ramazon_hayiti - bugun
+# qurbon_farq = qurbon_hayiti - bugun
+
+# # Natijalarni chiqarish
+# # print(f"Ramazon hayitigacha {ramazon_farq.days} kun qoldi")
+# # print(f"Qurbon hayitigacha {qurbon_farq.days} kun qoldi")
+
+# my_birthday = dt.date(2005, 1, 28)
+# farq = bugun - my_birthday
+# print(f"Mening tug'ulgan kunimdan shu kungacha o'tgan vaqt {farq.days} kun")
+
+
+# O‘zbekiston telefon raqamlari uchun andoza: +998 bilan boshlanadigan 12 raqam
+# andoza = " ^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$ "
+# msg = "Tel raqmingizni kiriting (masalan, +998901234567): "
+
+# while True:
+#     number = input(msg)
+#     if re.match(andoza, number):
+#         print("Tel raqam qabul qilindi")
+#         break
+#     else:
+#         print("Xato raqam kiritdingiz! +998 bilan boshlanadigan 12 raqamli raqam kiriting.")
+
+# import re
+
+def url_ajrat(matn):
+    # URL uchun regex andozasi
+    andoza = "r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+[^\s]*'"
+    # Matndan URL-larni topish
+    url_list = re.findall(andoza, matn)
+    return url_list
+
+# Namuna matn
+matn = """Assalom alaykum hurmatli do'stlar. Navbatdagi darsimiz YouTubega yuklandi: https://youtu.be/vsxJPRLXpgI
+Ushbu darsimizda unittest moduli yordamida klasslarning xususiyatlar va metodlarini tekshiruvchi dastur yozishni o'rganamiz. Bugungi dars manzili: https://python.sariq.dev/testing/37-klass-test"""
+
+# Funksiyani sinab ko‘rish
+natija = url_ajrat(matn)
+for url in natija:
+    print(url)
